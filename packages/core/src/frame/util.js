@@ -122,7 +122,7 @@ export function makeSlotBag() {
         mergeBag(bag) {
             if (!bag) return this;
             const slots = is.Function(bag.getSlots) ? bag.getSlots() : bag;
-            if (Array.isArray(bag) || isVNode(bag)) {
+            if (Array.isArray(bag) || bag?.__v_isVNode === true) {
                 this.setSlot(undefined, () => bag);
             } else {
                 Object.keys(slots).forEach(k => {

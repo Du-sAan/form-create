@@ -16,7 +16,8 @@ function getCookie(name) {
             try {
                 return JSON.parse(cookie);
             } catch (e) {
-                return cookie;
+                console.error(e)
+                throw e
             }
         }
     }
@@ -29,7 +30,8 @@ function getLocalStorage(name) {
         try {
             return JSON.parse(value);
         } catch (e) {
-            return value;
+            console.error(e)
+            throw e
         }
     }
     return null;

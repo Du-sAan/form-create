@@ -64,4 +64,6 @@ typings/
 
 # custom
 /index.html
-dist
+/components
+
+

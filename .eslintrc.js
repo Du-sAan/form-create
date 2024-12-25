@@ -23,10 +23,7 @@ module.exports = {
         'vue'
     ],
     'rules': {
-        'indent': [
-            'error',
-            4
-        ],
+        'indent': 0,
         'quotes': [
             'error',
             'single'

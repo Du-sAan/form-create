@@ -21,7 +21,8 @@ function getBody(xhr) {
     try {
         return JSON.parse(text);
     } catch (e) {
-        return text;
+        console.error(e)
+        throw e
     }
 }
 

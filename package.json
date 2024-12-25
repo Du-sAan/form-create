@@ -3,6 +3,7 @@
     "private": true,
     "scripts": {
         "build": "esno tools/cli/run.ts build",
+        "build:ele": "esno tools/cli/run.ts build -p element-ui",
         "build:test": "npm-run-all clear-dist \"build -- --{1}\" --",
         "dev:ele": "cd packages/element-ui && npm run dev:ele",
         "dev:antdv": "cd packages/ant-design-vue && npm run dev:antdv",
